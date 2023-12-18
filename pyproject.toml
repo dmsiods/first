@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "first"
+version = "0.1.0"
+description = ""
+authors = ["dima <dmsiods0@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+colorama = "^0.4.6"
+
+[tool.poetry.scripts]
+say-hello = 'first.scripts.say_hello:main'
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+ipython = "^8.18.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
